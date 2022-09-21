@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Exemplo de comentário em bloco -->
 
-<root>
+<if:root xmlns:if="http://www.exemplodeURIparaimportnamespace.com.br">
     <exemplo firstName="Nicolas"/>
     <exemplo2>
         <conteudo>1</conteudo>
@@ -17,4 +17,9 @@
     ]]>
     </conversao>
 
-</root>
+    <!-- _________________________________________ -->
+
+    <element attribute="21"></element>
+    <element attribute="22" />
+
+</if:root>
