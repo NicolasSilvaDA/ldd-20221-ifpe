@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Exemplo de comentário em bloco -->
+
+<root>
+    <exemplo firstName="Nicolas"/>
+    <exemplo2>
+        <conteudo>1</conteudo>
+        <conteudo>2</conteudo>
+        <conteudo>3</conteudo>
+    </exemplo2>
+
+    <conversao>
+    <![CDATA[
+        1 km < 1 mi
+        1 pint  < 1 L
+        1 pound < 1 kg
+    ]]>
+    </conversao>
+
+</root>
