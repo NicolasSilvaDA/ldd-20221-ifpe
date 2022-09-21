@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<receita>
+    <tempo-preparo unidade="min">60</tempo-preparo>
+    <rendimento>6</rendimento>
+    <ingredientes>
+        <ingrediente>
+            <nome nomeIngrediente="Trigo"/>
+            <quantidade qtd="600 g"/>
+        </ingrediente>
+        <ingrediente>
+            <nome nomeIngrediente="Ovo"/>
+            <quantidade qtd="6"/>
+        </ingrediente>
+        <ingrediente>
+            <nome nomeIngrediente="Açucar"/>
+            <quantidade qtd="300 g"/>
+        </ingrediente>
+        <ingrediente>
+            <nome nomeIngrediente="Leite"/>
+            <quantidade qtd="500 ml"/>
+        </ingrediente>
+        <ingrediente>
+            <nome nomeIngrediente="Manteiga"/>
+            <quantidade qtd="300 g"/>
+        </ingrediente>
+    </ingredientes>
+    <modo-preparo>
+        <descricao>
+            Em uma tigela, adicione a manteiga e o açucar, bata-os até a massa se tornar homogênea...
+        </descricao>
+    </modo-preparo>
+</receita>

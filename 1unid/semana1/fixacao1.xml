@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<loteca concurso="1234" data="21-09-2022">
+    <jogo resultado="M">
+        <mandante>Equipe A</mandante>
+        <visitante>Equipe B</visitante>
+    </jogo>
+
+    <jogo resultado="E">
+        <mandante>Equipe C</mandante>
+        <visitante>Equipe A</visitante>
+    </jogo>
+
+    <jogo resultado="V">
+        <mandante>Equipe B</mandante>
+        <visitante>Equipe C</visitante>
+    </jogo>
+
+</loteca>
