@@ -1,5 +1,46 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="dictionary">
-        
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="entry" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="title">
+                                <xs:complexType mixed="true">
+                                <xs:sequence>
+                                    <xs:element name="csc" minOccurs="1" maxOccurs="unbounded"/>
+                                </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="body">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="p">
+                                            <xs:complexType mixed="true">
+                                                <xs:sequence>
+                                                    <xs:element name="q" minOccurs="1" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:all>
+                                                                <xs:element name="sc" type="xs:string" />
+                                                            </xs:all>
+                                                            <xs:attribute name="date" type="xs:gYear" />
+                                                            <xs:attribute name="event" type="xs:string" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="birthplace" type="xs:string" />
+                        <xs:attribute name="id" type="xs:string" />
+                        <xs:attribute name="born" type="xs:gYear" />
+                        <xs:attribute name="died" type="xs:gYear" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
     </xs:element>
 </xs:schema>
