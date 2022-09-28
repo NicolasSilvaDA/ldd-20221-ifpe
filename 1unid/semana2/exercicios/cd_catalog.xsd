@@ -1,5 +1,26 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="catalog">
-        
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cd" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:all>
+                            <xs:element name="artist" type="xs:string" />
+                            <xs:element name="title" type="xs:string" />
+                            <xs:element name="country" type="xs:string" />
+                            <xs:element name="company" type="xs:string" />
+                            <xs:element name="price">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:float">
+                                        <xs:minInclusive value="0" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <xs:element name="year" type="xs:gYear" />
+                        </xs:all>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
     </xs:element>
 </xs:schema>
