@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="letterSchema.xsd">
+    <to>Tove</to>
+    <from>Jani</from>
+    <shipDate>2022-09-28</shipDate>
+    <heading>Reminder</heading>
+    <body lang="en">Do not forget me this weekend</body>
+    <empty nome="elementoVazio"/>
+</root>
