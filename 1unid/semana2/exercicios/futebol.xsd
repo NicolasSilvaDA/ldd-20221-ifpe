@@ -1,5 +1,38 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
     <xs:element name="cb">
-        
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="rodada" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="jogo" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="mandante">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="time" type="xs:string" />
+                                                    <xs:element name="gols" type="xs:integer" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="visitante">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="time" type="xs:string" />
+                                                    <xs:element name="gols" type="xs:integer" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                            
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="n" type="xs:integer"/>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
     </xs:element>
 </xs:schema>
