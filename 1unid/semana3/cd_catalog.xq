@@ -11,4 +11,12 @@ Quantos álbuns foram lançados na década de 1980? -> count(//cd[year >= 1971 a
 
 Quais artistas lançaram álbuns pela Polydor? -> //cd[company="Polydor"]/artist
 
+Em que ano foi lançado o álbum mais barato do catálogo? -> //cd[price=min(//price)]/year
+
+Qual o álbum mais caro lançado no ano de 1987? ->//cd[year=1987 and price=max(//cd[year=1987]/price)]/title/text() 
+
+Em que países os álbuns foram lançados? -> distinct-values(//cd/country)
+
+Quantos artistas distintos existem no catálogo? -> count(distinct-values(//cd/artist))
+
 :)
