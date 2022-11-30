@@ -56,8 +56,14 @@ Quantos e quais são os livros publicados, agrupados por ano? ->
 
 let $autores := distinct-values(//author)
 
+let $autores := for $aut in $autores
+order by $aut
+group by $i := $aut/substring(./string(), 1, 1)
+return <authors initial="{$i}" qtd="{count(distinct-values(//author[substring(., 1, 1) = $i]))}">
+{
+  return <author>{//}</author>
+}
+  
+</authors>
 
-for $aut in $autores
-group by $i := $aut[starts-with(., substring(., 1))]
-count $count
-return $i
+return $autores
